@@ -1,6 +1,12 @@
-# Sensu [![Ansible Galaxy](https://img.shields.io/badge/galaxy-sensu.sensu-660198.svg?style=flat)](https://galaxy.ansible.com/sensu/sensu/) [![Build Status](https://travis-ci.org/sensu/sensu-ansible.svg?branch=master)](https://travis-ci.org/sensu/sensu-ansible)
+# Sensu 
 
-[![Join the chat at https://slack.sensu.io/](https://slack.sensu.io/badge.svg)](https://slack.sensu.io/)
+How to install sensy by ansible
+
+```
+ansible-playbook --become --become-user=root --ask-become-pass --connection=127.0.0.1 site.yml
+```
+
+# Documentation
 
 This role deploys a full [Sensu](https://sensuapp.org) stack, a modern, open source monitoring framework.
 
