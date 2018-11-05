@@ -1,0 +1,23 @@
+---
+  - name: Sensu Install
+    hosts: localhost
+    become: true
+    roles:
+    - role: sensu.sensu
+      sensu_master: true
+      rabbitmq_server: true
+      redis_server: true
+      rabbitmq_host: localhost
+      redis_host: localhost
+      sensu_api_host: localhost
+      sensu_include_dashboard: true
+      sensu_deploy_rabbitmq_server: true
+      sensu_deploy_redis_server: true
+      rabbitmq_sensu_user_name: sensu
+      rabbitmq_sensu_password: sensupass
+      redis_password: false
+      sensu_api_user_name: admin
+      sensu_api_password: sensupass
+      rabbitmq_enable_ssl: false
+      sensu_ssl_gen_certs: false
+      sensu_ssl_manage_certs: false
