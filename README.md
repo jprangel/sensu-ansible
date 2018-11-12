@@ -1,9 +1,14 @@
 # Sensu 
 
+Install the roles:
+```
+ansible-galaxy install sensu.sensu
+```
+
 How to install sensy by ansible
 
 ```
-ansible-playbook --become --become-user=root --ask-become-pass --connection=127.0.0.1 site.yml
+ansible-playbook --connection=127.0.0.1 site.yml
 ```
 
 # Documentation
