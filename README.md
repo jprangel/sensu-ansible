@@ -1,4 +1,4 @@
-# Sensu 
+# Sensu Server
 
 Install the roles:
 ```
