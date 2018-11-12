@@ -1,7 +1,8 @@
 ---
   - name: Sensu Install
     hosts: localhost
-    become: true
+    become: yes
+    become_method: sudo
     roles:
     - role: sensu.sensu
       sensu_master: true
